@@ -1,5 +1,7 @@
 var webpack = require('webpack');
 
+
+
 /**
  * Watch options for the core watcher
  * @type {{files: string[], ignored: string[]}}
@@ -43,6 +45,8 @@ function development() {
         process.send('reload');
     });
 }
+
+
 
 /**
  * Hook into the `stencil bundle` command and build your files before they are packaged as a .zip
